@@ -64,10 +64,29 @@ nav a:hover {
 
 #menu-link{
 	display:none;
+	position:relative;
+	color: #fff;
+	text-decoration: none;
+	text-align:right;
+	padding-top: 0.2em;
+	padding-right: 1.25em;
+
 }
 
-.active-menu{
-	display: none;
+#menu-link:before {
+	content: "";
+	position: absolute;
+	top: 0.5em;
+	right: 1em;
+	width: 1em;
+	height: 0.15em;
+	border-top: 0.4em double #fff;
+	border-bottom: 0.15em solid #fff;
+	background: orange;
+}
+
+#menu-link-close { 
+	display:none;
 }
 
 .story-intro {
@@ -141,13 +160,10 @@ h1, h2 {
 		background:orange;
 	}
 
-	.active-menu {
-		display:block;
-	}
-
 	nav ul {
 	display:none;
 	position:absolute;
+	left:0;
 	top:25px;
 	z-index: 2;
 	width: 100%;
@@ -177,24 +193,21 @@ h1, h2 {
 	.sub-story{
 		width:100%;
 		margin-top:25px;
+		background: rgba(0, 0, 0, 0.75);
 	}
 
 	.sub-story:first-child{
 		margin-top:0;
 	}
-	.media{
+
+	.media {
 		float:left;
 		margin-right: 15px;
 	}
 
 	.sub-story-intro{
 		width: auto;
+		background: transparent;
 	}
 
 }
-
-@media (max-width: 400px){
-	.sub-story-intro{
-		padding:15px;
-	}
-	}

@@ -119,6 +119,14 @@ h1, h2 {
 	margin-right: 0;
 }
 
+.hero-image{
+	display:none;
+}
+
+.active-hero-image {
+	display:block;
+}
+
 
 @media (max-width: 865px){
 

@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 	$(document).click(function(){
 		$('nav ul').slideUp();
-	})
+	});
 
 	//image swap event listener
 	$('.sub-stories img').click(function(){
@@ -29,7 +29,7 @@ $(document).ready(function(){
 			src: 'images/' + mainName + '-250x330.jpg'
 		});
 
-		$(this).prev().attr('srcset', 'images/' + mainName + '-100x100.jpg 1x, images/' + mainName+ '-200x200.jpg 2x');
+		$(this).prev().attr('srcset', 'images/' + mainName + '-100x100.jpg 1x, images/' + mainName + '-200x200.jpg 2x');
 
 	});
 });

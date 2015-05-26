@@ -3,11 +3,13 @@ $(document).ready(function(){
 	$('#menu-link').click(function(e){
 		$('nav ul').slideToggle();
 		e.stopPropagation();
+
+		$(document).click(function(){
+			$('nav ul').slideUp();
+		});
 	});
 
-	$(document).click(function(){
-		$('nav ul').slideUp();
-	});
+	
 
 	//image swap event listener
 	$('.sub-stories img').click(function(){

@@ -193,7 +193,7 @@ h1, h2 {
 	.sub-story{
 		width:100%;
 		margin-top:25px;
-		background: rgba(0, 0, 0, 0.75);
+
 	}
 
 	.sub-story:first-child{
@@ -208,6 +208,9 @@ h1, h2 {
 	.sub-story-intro{
 		width: auto;
 		background: transparent;
+		padding-top:0;
+		padding-right:5px;
+		color:black;
 	}
 
 }

@@ -1,8 +1,13 @@
 $(document).ready(function(){
 	//mobile nav event listener
-	$('#menu-link').click(function(){
-		$('nav ul').slideToggle('active-menu');
+	$('#menu-link').click(function(e){
+		$('nav ul').slideToggle();
+		e.stopPropagation();
 	});
+
+	$(document).click(function(){
+		$('nav ul').slideUp();
+	})
 
 	//image swap event listener
 	$('.sub-stories img').click(function(){
@@ -23,7 +28,7 @@ $(document).ready(function(){
 			srcset: 'images/' + mainName + '-250x330.jpg 1x, images/' + mainName + '-500x660.jpg 2x',
 			src: 'images/' + mainName + '-250x330.jpg'
 		});
-		
+
 		$(this).prev().attr('srcset', 'images/' + mainName + '-100x100.jpg 1x, images/' + mainName+ '-200x200.jpg 2x');
 
 	});

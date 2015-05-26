@@ -119,48 +119,51 @@ h1, h2 {
 	margin-right: 0;
 }
 
-.hero-image{
-	display:none;
-}
-
-.active-hero-image {
-	display:block;
-}
-
 
 @media (max-width: 865px){
+	body {
+		width:100%;
+		margin:25px 0 0 0;
+	}
+
+	h1 {
+		font-size:3.5em;
+	}
 
 	#menu-link{
 		display:block;
-		position:relative;
+		position:absolute;
+		top:0;
+		height:25px;
 		float: right;
-		bottom:6em;
+		width:100%;
+		background:orange;
 	}
 
 	.active-menu {
 		display:block;
 	}
 
-nav ul{
+	nav ul {
 	display:none;
 	position:absolute;
+	top:25px;
 	z-index: 2;
 	width: 100%;
-}
+	}
 
-
-	
-
-	nav li{
+	nav li {
 		float:none;
 		width:100%;
 		border-left: none;
 		border-bottom: 1px solid white;
 	}
 
-	.page-wrap{
+	.page-wrap {
 		width:100%;
+		padding: 5px;
 	}
+
 
 	.main-story img{
 		width: 100%;
@@ -188,3 +191,9 @@ nav ul{
 	}
 
 }
+
+@media (max-width: 500px){
+	.sub-story-into{
+		padding:15px;
+	}
+	}
